@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <title>Resumen del libro</title>
+</head>
+<body>
+   <header>
+    <nav>
+        <ul class="menu">
+            <li><a href="#punto1"><h2>1.Introducción</h2></a></li>
+                    <ul class="submenu">
+                        <li><a href="#punto1.1"><h3>1.1 ¡Hola Mundo!</h3></a></li>
+                     </ul>
+            <li><a href="#punto2"><h2>2.Sintaxis Básica</h2></a></li>
+            <li><a href="#punto3"><h2>3.Variables y Constantes</h2></a></li>
+                    <ul class="submenu">
+                        <li><a href="#punto3.1"><h3>3.1 Variables</h3></a></li>
+                        <li><a href="#punto3.2"><h3>3.2 Constantes</h3></a></li>
+                    </ul>
+            <li><a href="#punto4"><h2>4.Tipos De Datos Primitivos</h2></a></li>
+                    <ul class="submenu">
+                        <li><a href="#punto4.1"><h3>4.1 Boolean</h3></a></li>
+                        <li><a href="#punto4.2"><h3>4.2 Number</h3></a></li>
+                        <li><a href="#punto4.3"><h3>4.3 String</h3></a></li>
+                        <li><a href="#punto4.4"><h3>4.4 Null y undefined</h3></a></li>
+                        <li><a href="#punto4.5"><h3>4.5 Conversión entre tipos de datos primitivos</h3></a></li>
+                            <ul class="submenu-2">
+                                <li><a href="#punto4.5.1"><h3>4.5.1 Conversión a números</h3></a></li>
+                                <li><a href="#punto4.5.2"><h3>4.5.2 Conversión a cadenas</h3></a></li>
+                                <li><a href="#punto4.5.3"><h3>4.5.3 Conversión a valores booleanos</h3></a></li>  
+                            </ul>
+                    </ul>
+            <li><a href="#punto5"><h2>5.Operadores</h2></a></li>
+                    <ul class="submenu">
+                        <li><a href="#punto5.1"><h3>5.1 Operadores Aritméticos</h3></a></li>
+                        <li><a href="#punto5.2"><h3>5.2 Operadores de Asignación</h3></a></li>
+                        <li><a href="#punto5.3"><h3>5.3 Operadores de Comparación</h3></a></li>
+                        <li><a href="#punto5.4"><h3>5.4 Operadores</h3></a></li>
+                        <li><a href="#punto5.5"><h3>5.5 El Operador Condicional</h3></a></li>
+                        <li><a href="#punto5.6"><h3>5.6 El Operador Typeof</h3></a></li>
+                        <li><a href="#punto5.7"><h3>5.7 Predencia De Operadores</h3></a></li>
+                    </ul>
+            <li><a href="#punto6"><h2>6.Sentencias De Control De Flujo</h2></a></li>
+                <ul class="submenu">
+                    <li><a href="#punto6"><h3>6.1 if...else</h3></a></li>
+                    <li><a href="#punto6.2"><h3>6.2 switch...case</h3></a></li>
+                    <li><a href="#punto6.3"><h3>6.3 for</h3></a></li>
+                    <li><a href="#punto6.4"><h3>6.4 while y do...while</h3></a></li>
+                    <li><a href="#punto6.5"><h3>6.5 break y continue</h3></a></li>
+                </ul>
+            <li><a href="#punto7"><h2>7.Funciones</h2></a></li>
+            <ul class="submenu">
+                <li><a href="#punto7.1"><h3>7.1 Invocación De Una Función</h3></a></li>
+                <li><a href="#punto7.2"><h3>7.2 El Tipo De Datos Función</h3></a></li>
+                <li><a href="#punto7.3"><h3>7.3 Alcanza De Las Variables</h3></a></li>
+            </ul>
+            <li><a href="#punto8"><h2>8.Objetos</h2></a></li>
+            <ul class="submenu">
+                <li><a href="#punto8.1"><h3>8.1 Propiedades</h3></a></li>
+                <li><a href="#punto8.2"><h3>8.2 Métodos</h3></a></li>
+                <li><a href="#punto8.3"><h3>8.3 La función constructora</h3></a></li>
+                <li><a href="#punto8.4"><h3>8.4 Mutabilidad</h3></a></li>
+                <li><a href="#punto8.5"><h3>8.5 Objetos Globales</h3></a></li>
+                <ul class="submenu-2">
+                    <li><a href="#punto8.5.1"><h3>8.5.1 El objeto Array</h3></a></li>
+                    <li><a href="#punto8.5.2"><h3>8.5.2 El objeto String</h3></a></li>
+                    <li><a href="#punto8.5.3"><h3>8.5.3 El objeto Date</h3></a></li> 
+                    <li><a href="#punto8.5.4"><h3>8.5.4 El objeto Math</h3></a></li>  
+                </ul>
+            </ul>
+    </nav>
+    </header> 
+    <main>
+        <section id="punto1">
+            <h2>1.Introducción</h2>
+            <p>JavaScript nació en los años 90 cuando las páginas web eran estáticas y la interacción con el usuario requería comunicación con el servidor. Para mejorar esto, Netscape contrató a Brendan Eich, quien en 1995 creó LiveScript, luego renombrado como JavaScript tras la compra de Netscape por Sun Microsystems. Para evitar conflictos tecnológicos, en 1997 se estandarizó como ECMAScript (ES), con la versión ES6 (2015) siendo clave en la evolución del lenguaje.</p>
+            <hr>
+        <article id="punto1.1"> 
+            <h3>1.1 ¡Hola Mundo!</h3>  
+            <p> El desarrollo de código JavaScript solo requiere un editor como Visual Studio Code, su ejecución solo exige un navegador. Abra Visual Studio Code (o su editor favorito), cree un nuevo fichero llamado “holaMundo.html” y escriba el siguiente código: </p>
+            <h3>Ejemplo de Código en HTML</h3>
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;script&gt;
+                        alert("Hola Mundo");
+                    &lt;/script&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+       
+            <p>Como puede observar, el código JavaScript forma parte de la etiqueta <code>&lt;script&gt;</code> situada dentro de la cabecera (etiqueta <code>&lt;head&gt;</code>), aunque también habría podido  incluirse en el cuerpo del documento HTML (etiqueta <code>&lt;body&gt;</code>). </p>
+        </article> 
+        </section>
+
+        <section id="punto2">
+            <h2>2.Sintaxis Básica</h2>
+            <p>Como cualquier otro programa, un script
+                está formados por un conjunto de instrucciones, llamadas
+                sentencias, que indican al ordenador (en concreto, al navegador, ya
+                que es quien las interpreta) la secuencia de acciones que debe
+                realizar en cada momento.
+                Las sentencias se separan entre sí con un punto y coma (ʻ;ʼ).</p>
+
+            <pre>
+                sentecia;
+                ...
+                sentencia;
+            </pre>
+
+            <p> Aunque JavaScript interpreta por defecto el retorno de carro como el
+                final de una sentencia, se aconseja encarecidamente añadir siempre
+                un punto y coma.</p>
+
+            <p>
+                Las sentencias se componen de:
+                <li>Valores</li>
+                <li>Variables (o constantes)</li>
+                <li>Operadores</li>
+                <li>Palabras clave</li>
+            </p>
+
+            <p>Los tipos de datos más
+                comunes en JavaScript son los booleanos (representan los conceptos
+                de cierto y falso), los números y los textos. Se trata de tipos
+                primitivos porque representan un único dato. Dichos valores pueden usarse directamente o almacenarse
+                en variables (o constantes). En ese caso, cuando haga referencia a
+                ellas lo estará haciendo al valor que contengan en ese momento.</p>
+
+            <p>Las variables y/o los valores podrán combinarse mediante
+                operadores para formar expresiones que permitan obtener nuevos
+                valores. Por ejemplo, la expresión:</p>
+
+            <pre>
+                2 + 3 = 5
+            </pre>
+
+            <p>let indica a JavaScript que cree una variable, tal como se hace en la siguiente sentencia con la que se crea la variable x:</p>
+
+            <pre>
+                let x;
+            </pre>
+
+            <p> Los comentarios de una línea comienzan con los caracteres “//”.
+                Pueden ir solos o a continuación de la sentencia que describen.</p>
+
+            <pre>
+                // Esto es un comentario
+                let x; // Esto también es un comentario
+            </pre>
+
+            <p>Los comentarios de varias líneas comienzan con “/*” y terminan con
+                “*/”. Pueden ir solos o a continuación de la sentencia que describen.</p>
+            <pre>  
+                /* Esto es un comentario
+                de varias líneas */
+                let x; /* Esto también es un comentario
+                de varias líneas */
+            </pre>
+        </section>
+        
+        <section id="punto3">
+            <h2>3.Variables y Constantes</h2>
+            <p>Variables y constantes son fundamentales en los programas, ya que almacenan la información que se usa durante la ejecución:
+                <li>Las variables pueden cambiar de valor.</li>
+                <li>Las constantes mantienen un valor fijo</li>
+            </p>
+            <p>Los ejemplos de código en JavaScript se almacenan en un archivo llamado "pruebas.js" que se encuentra en la misma carpeta que la página web.</p>
+            <pre>
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;script src="pruebas.js"&gt;&lt;/script&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+
+            <p>El archivo HTML incluye una cabecera con una etiqueta &lt;meta&gt; que define el juego de caracteres UTF-8. Esto es esencial para que el navegador pueda mostrar correctamente caracteres especiales, como la letra "ñ" y los acentos.</p>
+            <p>También se utiliza una etiqueta &lt;script&gt; en la cabecera para importar el código JavaScript correspondiente a cada ejercicio, el cual está almacenado en el archivo llamado "pruebas.js".</p>
+            <hr>
+            <article id="punto3.1">
+                <h3>3.1.Variables</h3>
+                <p>Una variable es un espacio de memoria donde se almacena
+                    información. Se distinguen entre ellas por un nombre (identificador)
+                    que, al ser referenciado, permite guardar o recuperar los datos que
+                    contiene. En JavaScript las variables se crean cuando se declaran
+                    con la palabra clave let seguida de su identificador:</p>
+                <pre>
+                    let identificador;
+                </pre>
+                <p>Por compatibilidad con viejos navegadores, también se permite
+                    declarar variables con la palabra clave var (en vez de let).</p>
+
+                <p>Las reglas que tiene una variable son:
+                <li>El nombre de una variable puede contener letras, dígitos y los
+                    caracteres $ y _.</li>
+                <li>El primer carácter no puede ser un dígito.</li>
+                <li>JavaScript distingue entre mayúsculas y minúsculas.</li>
+                <li>Los nombres de las variables no pueden coincidir con las palabras reservadas del lenguaje.</li>
+                <li>El nombre de una variable debe ser descriptivo y representar el
+                    dato que almacena.</li>
+                <li>No use nunca guiones (ʻ-ʻ) ya que se confundirían con el
+                    operador de la resta.</li>
+                </p>
+                
+                <p>Naturalmente, al declarar una variable también es posible asignarle un valor:</p>
+                    <pre>let identificador = valor.</pre>
+                <p>En una misma línea de código se pueden declarar varias variables, sean del mismo o de diferente tipo</p>
+                <pre>let texto = "Hola", numero = 10, booleano = true.</pre>
+                <p>También se pueden declarar variables en diferentes líneas de código</p>
+                <pre>
+                    let texto = "Hola";
+                    let numero = 10;
+                    let booleano = true;
+                </pre>
+                <p>El valor de las variables que no se han inicializado es undefined.</p>
+                <pre>
+                    let x;
+                    console.log(x); // undefined
+                </pre>
+                <p>Aunque JavaScript permite asignar un valor a una variable sin
+                    haberla declarado previamente, no se aconseja hacerlo para evitar
+                    que se creen variables cuyo nombre se haya escrito de forma incorrecta. La mejor forma de evitar este problema es utilizar la siguiente directiva como primera línea de código</p>
+                <pre>
+                    "use strict";
+                </pre>
+                <hr>
+                </article>
+                <article id="punto3.2">
+                    <h3>3.2.Constantes</h3>
+                    <p>Al igual que las variables, almacenan datos en memoria, pero su valor no puede cambiar una vez asignado.</p>
+                    <p>Se declaran utilizando la palabra clave const, seguida de un identificador y un valor. Es obligatorio asignarles un valor en el momento de la declaración.</p>
+                    <pre>
+                        const identificador = valor;
+                    </pre>
+                    <p>Ejemplo de nomenclatura: las constantes suelen escribirse en mayúsculas. En caso de nombres compuestos, las palabras se separan mediante un guion bajo (e.g., NOMBRE_LARGO_DE_CONSTANTE).</p>
+                    <p>Las constantes no pueden aparecer en dos declaraciones distintas, de lo contrario, se genera un error de ejecución.</p>
+                    <pre>
+                        const x = 10;
+                        const x = 20; // Error
+                    </pre>
+                </article>
+        </section>
+        <section id="punto4">
+            <h2>4.Tipos De Datos Primitivos</h2>
+            <p>Los tipos de datos pueden ser primitivos (los más básicos con los que se puede trabajar) o compuestos (formados por uno o más datos primitivos). </p>
+            <p>Los tipos de datos primitivos son:</p>
+            <li>Boolean: true o false</li>
+            <li>Number: números enteros o decimales</li>
+            <li>BigInt: Son números enteros más grandes que los de tipo Numbre</li>
+            <li>String: cadena de caracteres</li>
+            <li>Null: Solo puede tomar el valor null, que representa un valor nulo o vacío.</li>
+            <li>Undefined: Solo puede tomar el valor undefined, que representa una variable no inicializada.</li>
+            <hr>
+
+            <article id="punto4.1">
+                <h3>4.1.Boolean</h3>
+                <p>El tipo de dato Boolean representa los valores true (verdadero) y false (falso). Estos se utilizan principalmente en la programación para evaluar expresiones de comparación o lógicas. Su propósito principal es controlar el flujo del programa, como en estructuras condicionales (if..then..else, switch..case) y en bucles (for, while, do..while), donde determinan qué acciones ejecutar o cuándo detener las iteraciones. En resumen, son esenciales para la toma de decisiones y la lógica en la programación.</p>
+                <pre>
+                    let x = true;
+                    let y = false;
+                </pre>
+                <hr>
+            </article>
+            <article id="punto4.2"> 
+                <h3>4.2.Number</h3>
+                <p> A diferencia de otros lenguajes de programación que distinguen entre enteros, con signo, sin signo, decimales de simple o doble precisión, etc., en JavaScript todos los valores numéricos forman parte del tipo de datos Number. Internamente, estos se almacenan como decimales y ocupan 64 bits en memoria.</p>
+                <p>JavaScript solo representa de forma exacta los números enteros comprendidos entre -(253 – 1) y 253 – 1, es decir, entre -9007199254740991 y 9007199254740991.</p>
+            </article>
+            <article id="punto4.3">
+                <h3>String</h3>
+                <p>El tipo de datos String se utiliza para el manejo de textos, formados por una secuencia de caracteres entre comillas (tanto simples como dobles). Por ejemplo, estados dos cadenas representan el mismo texto:</p>
+                <pre>
+                    let nombre = "Juan";
+                    let apellido = 'Pérez';
+                </pre>
+                <p>Las cadenas de caracteres pueden combinar comillas simples o dobles, siempre que sean de tipos diferentes, como, por ejemplo</p>
+                <pre>
+                    let texto = "Juan 'El Rápido'";
+                    let texto = 'Juan "El Rápido"';
+                </pre>
+                <p>Los caracteres que componen una cadena no solo pueden ser los alfanuméricos habituales sino secuencias de escape que se preceden por una barra invertida (ʻ\ʼ). Las más habituales son:</p>
+                <li>\n: Salto de línea</li>
+                <li>\t: Tabulador</li>
+                <li>\r: Retorno de carro</li>
+                <li>\b: Retroceso</li>
+                <p>Las secuencias de escape también se utilizan para que el navegador no malinterprete ciertos caracteres propios del lenguaje, para resolver este problema, las comillas simples, las dobles e, incluso, la barra invertida utilizada como carácter de escape, se deben preceder con dicha barra invertida:</p>
+                <li>\': Comillas simples</li>
+                <li>\": Comillas dobles</li>
+                <li>\\: Barra invertida</li>
+                <pre>
+                    let texto = "Juan \"El Rápido\"";
+                </pre>
+            </article>
+            <article id="punto4.4">
+                <h3>4.4.Null y Undefined</h3>
+                <p>Ambos tipos de datos solo tienen un único valor, null y undefined , respectivamente. Aunque podrían llegar a confundirse, conceptualmente son diferentes ya que el primero representa un valor nulo o irrelevante, mientras que el segundo es el que tiene una variable a la que todavía no se le ha asignado ningún valor.</p>
+                <p>Por ejemplo, en este código de ejemplo se asigna de forma intencionada el valor null a la variable x , mientras el de la variable y es undefined :</p>
+                <pre>
+                    let x = null;
+                    let y;
+                </pre>
+            </article>
+            <article id="punto4.5">
+                <h3>4.5 Conversión entre tipos de datos primitivos</h3>
+                <p>Si bien los operadores están pensados para trabajar con operandos del mismo tipo, cuando esto no ocurre JavaScript trata de convertirlos automáticamente al tipo adecuado. No obstante, si se quiere mantener un mayor control sobre la ejecución del programa, lo más seguro es forzar de forma explícita dicha conversión con las siguientes funciones globales</p>
+                <li>Number(): Convierte un valor a un número</li>
+                <li>String(): Convierte un valor a una cadena</li>
+                <li>Boolean(): Convierte un valor a un booleano</li>
+                <hr>
+            </article>
+            <article id="punto4.5.1">
+                <h3>4.5.1.Conversión a números</h3>
+                <p>La función global que transforma cualquier tipo de dato primitivo en
+                    un número es:</p>
+                <pre>
+                    Number(valor);
+                </pre>
+                <p>A continuación, se muestran diversas expresiones de ejemplo y el
+                    resultado de su evaluación como un comentario al lado de cada una
+                    de ellas</p>
+                <pre>
+                    Number("5") // 5
+                    Numbre(" 5 ") // 5
+                </pre>
+                <p>Observe que los espacios en blanco al principio o al final de la
+                    cadena no afectan a la conversión.</p>
+                <p>Si no se pudiera realizar la conversión, se devolvería el valor NaN, tal como sucede en estas otras expresiones:</p>
+                <pre>
+                    Number("Hola") // NaN
+                    Number("5.5.5") // NaN
+                </pre>
+                <p> Las cadenas que están vacías o solo tienen espacios se convierten en
+                    el número 0:</p>
+                <pre>
+                    Number("") // 0
+                    Number(" ") // 0
+                </pre>
+                <p>La conversión de cadenas a números se hace de forma automática
+                    en todas las operaciones aritméticas (siempre que el valor de la cadena sea numérico), excepto en la suma. Por ese motivo, en las siguientes expresiones no sería necesario usar la función Number():</p>
+                <pre>
+                    "5" - 2 // 3
+                    "5" * 2 // 10
+                    "5" / 2 // 2.5
+                </pre>
+                <p>Donde sí sería imprescindible dicha función es en expresiones
+                    donde se realice una suma, como en esta:</p>
+                <pre>
+                    "5" + 2 // "52"
+                </pre>
+                <p>Además de la función Number(), JavaScript ofrece estas funciones adicionales:</p>
+                <p>parseInt(cadena, base): Convierte una cadena en un número entero. Este método puede incluir un segundo argumento con la base en la que está expresado el número</p>
+                <pre>
+                    parseInt("10") // 10
+                    parseInt("10", 2) // 2
+                    ParseInt("10HolaMundo") // 10
+                </pre>
+                <p>parseFloat(cadena, base): Convierte una cadena en un número decimal</p>
+                <p> No solo las cadenas se pueden convertir en números. También es posible hacerlo con valores booleanos, tal como se pone de manifiesto a continuación:</p>
+                <pre>
+                    Number(true) // 1
+                    Number(false) // 0
+                </pre>
+                <p>El valor null tampoco es ninguna excepción, ya que se convertiría en el número 0, no así undefined, para el que la función Number() devolvería NaN como resultado</p>
+                <pre>
+                    Number(null) // 0
+                    Number(undefined) // NaN
+                </pre>
+                <hr>
+            </article>
+            <article id="punto4.5.2">
+                <h3>4.5.2.Conversión a cadenas</h3>
+                <p>La función global que transforma cualquier tipo de dato primitivo en
+                    una cadena es:</p>
+                <pre>
+                    String(valor);
+                </pre>
+                <p>Así, por ejemplo, la siguiente expresión devolvería la cadena “123”:</p>
+                <pre>
+                    String(123);
+                </pre>
+                <p>Los valores booleanos también se pueden convertir en cadenas.</p>
+                <pre>
+                    String(true) // "true"
+                    String(false) // "false"
+                </pre>
+                <p>El valor null se convertiría en la cadena “null”, mientras que undefined en “undefined”.</p>
+                <pre>
+                    String(null) // "null"
+                    String(undefined) // "undefined"
+                </pre>
+                <p> De forma alternativa, si el valor a convertir fuera de tipo booleano o
+                    un número, también se podría utilizar el siguiente método:
+                    toString()</p>
+                <pre>
+                    (123).toString() // "123"
+                </pre>
+                <p>Otros métodos de conversión de números a cadenas que le podrían
+                    resultar interesantes son:</p>
+                <li>toFixed(número, decimales): Convierte el número en
+                    una cadena, que se redondearía con los decimales indicados
+                    opcionalmente como argumento.</li>
+                <li>toExponetial(número, decimales): Comportamiento es similar al del método anterior, excepto
+                    que el número se expresaría en notación exponencial.</li>
+                <li>toPrecision(número, dígitos): En este, el
+                    argumento opcional indicaría el número de dígitos al que se
+                    redondearía el número. </li>
+                <hr>
+            </article>
+            <article id="punto4.5.3">
+                <h3>4.5.3.Conversión a valores booleanos</h3>
+                <p> Una vez conocidas las diversas formas de transformar un valor en un número o en una cadena, solo faltaría saber cómo convertirlo en true o false. Para ello deberá utilizar la función global:</p>
+                <pre>
+                    Boolean(valor);
+                </pre>
+                <p> Se trata de una función poco utilizada, ya que JavaScript realiza
+                    automáticamente </p>
+                <p>Las siguientes expresiones son ejemplos representativos de su
+                    comportamiento:</p>
+                <pre>
+                    Boolean(0) // false
+                    Boolean(1) // true
+                    Boolean("") // false
+                    Boolean(" ") // true
+                    Boolean(null) // false
+                    Boolean(undefined) // false
+                </pre>
+                <p>En general, cualquier cadena que no esté vacía (aunque solo tenga espacios) se convierte en true. Por el mismo motivo, cualquier número que no sea el 0 (con o sin decimales) también se convertiría en true.</p>
+                <hr>            
+            </article>
+        </section>
+        <section id="punto5">
+            <h2>5.Operadores</h2>
+            <p>Los operadores son símbolos especiales con los que se realiza algún
+                tipo de cálculo sobre uno o más valores, cuyo resultado es otro valor.</p>
+            <p>Los operadores se clasifican en:</p>
+            <li>Operadores Aritméticos: Realizan operaciones matemáticas sobre sus operandos </li>
+            <li>Comparación: Comprueban la igualdad o desigualdad entre dos operandos</li>
+            <li>Asignación: Asignan un valor a una variable, el más conocido es "="</li>
+            <li>Operadores Lógicos: Permiten combinar valores booleanos y devuelven un resultado booleano</li>
+            <li>Condición: Se utiliza para realizar una acción si se cumple una condición entre los dos valores</li>
+            <li>typeof: Devuelve el tipo de dato de un valor.</li>
+            <hr>
+            
+            <article id="punto5.1">
+                <h3>5.1.Operadores Aritméticos</h3>
+                <p>Los operadores aritméticos son los responsables de las operaciones matemáticas básicas:</p>
+                <li>Suma(+): Suma dos operandos cuando su valor es un número y los concatena
+                    cuando se trata de cadenas </li>
+                <li>Resta(-): Resta los dos operandos</li>
+                <li>Multiplicación(*): Multiplica los dos operandos</li>
+                <li>División(/): Divide el primer operando por el segundo</li>
+                <li>Resto(%): Devuelve el resto de la división entera del primer operando por el segundo</li>
+                <li>Incremento(++): Aumenta en una unidad el valor de la variable</li>
+                <li>Decremento(--): Disminuye en una unidad el valor de la variable</li>
+                <li>Exponenciación(**): Eleva al cuadrado el valor de la variable</li>
+                <li>Negación(-): Cambia de signo del operando. Aunque el
+                    símbolo es el mismo que el de la resta, no hay ambigüedad
+                    porque este operador es unario, mientras que el de la resta es
+                    binario.  
+                </li>
+                <hr>
+            </article>
+            <article id="punto5.2">
+                <h3>5.2.Operadores de Asignación</h3>
+                <p> Los operadores de asignación almacenan en una variable el
+                    resultado de una expresión. El más común ya lo conoce (“=”),
+                    aunque no es el único, ya que JavaScript ofrece todos estos:</p>
+                <li>Asignación simple(=): Asigna a la variable situada a la izquierda el resultado de la expresión derecha</li>
+                <li>Asignación suma(+=): Asigna a la variable situada a la izquierda el resultado de sumar su valor inicial al de la expresión derecha. </li>
+                <li>Asignación resta(-=): Igual que el operador anterior, pero utilizando la resta.</li>
+                <li>Asignación multiplicación(*=): Asigna a la variable situada a la izquierda el resultado de multiplicar su valor inicial por el de la expresión derecha.</li>
+                <li>Asignación división(/=): Igual que el operador anterior, pero utilizando la división.</li>
+                <li>Asignación resto(%=): Asigna a la variable situada a la izquierda el resto de dividir su valor inicial por el de la expresión derecha.</li>
+                <li>Asignación  exponenciación (**=). Asigna a la variable situada a la izquierda el resultado de elevar su valor inicial al de la expresión derecha.</li>
+                <hr>
+            </article>
+            <article id="punto5.3">
+                <h3>Operadores de Comparación</h3>
+                <p>Los operadores de comparación devuelven valores true o false al comparar operandos. Se usan en condicionales y bucles para tomar decisiones o repetir acciones, dependiendo del resultado de la comparación.</p>
+                <li>Igualdad(==): Compara si los dos operandos son iguales</li>
+                <li>Desigualdad(!=): Compara si los dos operandos son diferentes</li>
+                <li>Estrictamente igual(===): Compara si los dos operandos son iguales y tienen el mismo tipo de dato</li>
+                <li>Estrictamente desigual(!==): Compara si los dos operandos son diferentes o tienen diferente tipo de dato</li>
+                <li>Menor, menor o igual, mayor, mayor o igual(&lt;, &lt;=, &gt;, &gt;>): Devuelve true igual, mayor, mayor o igual que el segundo, respectivamente.</li>
+                <hr>
+            </article>
+            <article id="punto5.4">
+                <h3>5.4.Operadores Lógicos</h3>
+                <p>Los operadores lógicos aplican las reglas del álgebra de Boolean a sus operadores. Se utilizan solos o en expresiones donde se combinan con operadores de comparación.</p>
+                <li>AND(&&): Devuelve true si ambos operandos son true</li>
+                <li>OR(||): Devuelve true si al menos uno de los operandos es true</li>
+                <li>NOT(!): Devuelve true si el operando es false y viceversa</li>
+
+                <p>Si no fueran booleanos devolveria:</p>
+                <li>AND(&&): Devuelve el valor del primer operando si este se puede convertir a false. De lo contrario, devolvería el del segundo</li>
+                <li>OR(||): Devuelve el valor del primer operando si este se puede convertir a true. De lo contrario, devolvería el del segundo.</li>
+                <li>NOT(!): Devuelve false si su único operando se puede convertir a true . De lo contrario, devolvería true . </li>
+                
+                <p>En las operaciones lógicas, JavaScript convierte a false los valores undefined , null o NaN , así como la cadena vacía ( "" ) y el número 0.</p>
+                <hr>
+            </article>
+            <article id="punto5.5">
+                <h3>5.5.Operador Condicional</h3>
+                <p>El operador condicional es el único ternario (tiene tres operandos), ya que está formado por una condición y dos valores:  </p>
+                <pre>
+                    condición? valor1 : valor2
+                </pre>
+                <p>Si la condición (expresión que contiene operadores de comparación y/o lógicos) se evaluara como true el operador devolvería el valor1 y, en caso contrario, el valor2.</p>
+                <hr>
+            </article>
+            <article id="punto5.6">
+                <h3>5.6.Operador TYPEOF</h3>
+                <p>El operador typeof es un operador unario muy especial porque devuelve una cadena con el tipo de su operando. Admite la siguiente sintaxis:</p>
+                <pre>
+                    typeof operador
+                    typeof(operador)
+                </pre>
+                <p>Además de String , Number , BigInt , Boolean , Null y Undefined , este operador también identifica los siguientes tipos de datos:</p>
+
+                <li>Object: Los objetos son estructuras de datos fundamentales en la programación orientada a objetos, compuestas por atributos y métodos.</li>
+                <br>
+                <li>Function: Las funciones son un tipo de dato especial que tiene la capacidad única de ser invocado, funcionando como valores dentro del lenguaje</li>
+                <hr>
+            </article>
+            <article id="punto5.7">
+                <h3>5.7.Predencia De Operadores</h3>
+                <p>Las expresiones que tenga que desarrollar en la práctica seguramente requieran más de un operador.</p>
+                <p>En programación no sigue estrictamente un orden de izquierda a derecha o viceversa, sino que depende de la precedencia de los operadores.</p>
+                <p>El orden de precedencia de los operadores es el siguiente (de mayor a menor):</p>
+                <li>1. Incremento y decremento (++, --).</li>
+                <li>2. Negación y obtención de tipo (-, typeof).</li>
+                <li>3. Exponenciación (**).</li>
+                <li>4. Multiplicación, división y resto (*, /, %).</li>
+                <li>5. Adición y sustracción (+, -).</li>
+                <li>6. Comparación (&lt;, &lt;=, &gt;, &gt;=).</li>
+                <li>7. Igualdad (==, !=, ===, !==).</li>
+                <li>8. Condicional (? :).</li>
+                <li>9. Asignación (=, +=, -=, etc.).</li>
+            </article>
+        </section>
+        <section id="punto6">
+            <h2>6.Sentencias De Contorl De Flujo</h2>
+        <p>En programación, ejecutar sentencias de forma secuencial es útil pero limitado, especialmente cuando se requiere repetir acciones múltiples veces o controlar situaciones desconocidas. Para solucionar esto, se utilizan sentencias condicionales e iterativas que permiten adaptar el flujo de ejecución a las necesidades específicas de una aplicación. Estas herramientas son esenciales para evitar redundancias y gestionar procesos más dinámicos.</p>
+        <p>Las sentecias condicionales en JavaScript son:</p>
+        <li> if...else: Permite ejecutar diferentes bloques de código según si una condición es verdadera o falsa</li>
+        <li> switch...case: Permite ejecutar diferentes bloques de código según el valor de una variable</li>
+        <p>Las sentencias de repetición son: </p>
+        <li>for: Permite ejecutar un bloque de código un número determinado de veces</li>
+        <li>while y do...while: Permiten ejecutar un bloque de código mientras se cumpla una condición</li>
+        <li>break y continue: Permiten controlar el flujo de ejecución de un bucle</li>
+        <hr>
+
+        <article id="punto6.1">
+            <h3>6.1.IF...ELSE</h3>
+            <p>Esta sentencia condicional permite la ejecución de un bloque de código u otro en función del resultado devuelto por una expresión lógica y/o de comparación. Su sintaxis es la siguiente:</p>
+            <pre>
+                if (condición) {
+                    // Bloque de código si la condición es verdadera
+                } else {
+                    // Bloque de código si la condición es falsa
+                }
+            </pre>
+            <p>Un ejemplo es.</p>
+            <pre>
+                let edad = 18;
+                if (edad >= 18) {
+                    console.log("Eres mayor de edad");
+                } else {
+                    console.log("Eres menor de edad");
+                }
+            </pre>
+            <p>Los bloques de sentencias que se ejecutan cuando se cumple (o no) la condición se encierran entre llaves (caracteres ʻ{ʻ y ʻ}ʼ). Si solo estuvieran formados por una sentencia, las llaves serían opcionales.</p>
+            <pre>
+                if(x>y) resultado = "x es mayor que y";
+                else resultado = "x no es mayor que y";
+            </pre>
+            <hr>
+        </article>
+        <article id="punto6.2">
+            <h3>6.2.SWITCH...CASE</h3>
+            <p>Esta sentencia permite la ejecución de bloques de código asociados a ciertos valores de una expresión. Su sintaxis es la siguiente:</p>
+            <pre>
+                switch (expresión) {
+                    case valor1:
+                        ...
+                        break;
+                    case valor2:
+                        ...
+                        break;
+                    default:    
+                        ... ;
+                }
+            </pre>
+           <p>La sentencia switch evalúa una expresión y ejecuta el bloque de código del case coincidente. Si no hay coincidencia, se ejecuta el bloque default (si existe)</p>
+           <p>Particularidades importantes:</p>
+           <li>La comparación es estricta, requiere coincidencia de tipo y valor</li>
+           <li>Un case puede contener una expresión como valor.</li>
+           <li>El bloque default es opcional; sin él, el switch finaliza sin acción.</li>
+           <li>Es necesario usar break al final de cada bloque para evitar ejecutar bloques siguientes sin coincidencia.</li>
+            <hr>
+        </article>
+        <article id="punto6.3">
+            <h3>6.3.FOR</h3>
+            <p>La sentencia for permite ejecutar un bloque de código un número determinado de veces. Su sintaxis es la siguiente:</p>
+            <pre>
+                for (inicialización; condición; actualización) {
+                    // Bloque de código
+                }
+            </pre>
+            <p>Está formada por tres expresiones:</p>
+            <li>Expresión inicial: Se evalúa una sola vez al inicio, usualmente declarando o inicializando una variable de contador.</li>
+            <li>Condición: Se verifica antes de cada iteración. Si es true, el bucle ejecuta el bloque de código; si es false, termina.</li>
+            <li>Expresión final: Se evalúa al final de cada iteración para actualizar el contador (incremento o decremento)</li>
+            <hr>
+        </article>
+        <article id="punto6.4">
+            <h3>6.4.WHILE Y DO...WHILE</h3>
+            <p>Las sentencias while y do...while permiten ejecutar un bloque de código mientras se cumpla una condición. La diferencia entre ambas radica en que la primera evalúa la condición al inicio y la segunda al final. Su sintaxis es la siguiente:</p>
+            <pre>
+                while (condición) {
+                    // Bloque de código
+                }
+            </pre>
+            <p>Lo primero que se hace es evaluar la condición. Si su valor fuera false no se entraría en el bucle. De lo contrario, se ejecutaría el bloque de código asociado, tras lo cual se volvería a evaluar la condición. Si su valor fuera false se saldría del bucle.</p>
+            <p>La sentencia do...while es similar a while , excepto por el hecho de que la condición se evalúa después de ejecutar el bloque de código (no antes):</p>
+            <pre>
+                do {
+                    // Bloque de código
+                } while (condición);
+            </pre>
+            <p>La principal consecuencia es que el bloque de código se ejecutará al
+                menos una vez.</p>
+            <hr>
+        </article>
+        <article id="punto6.5">
+            <h3>6.5.BREAK Y CONTINUE</h3>
+            <p>Las sentencias break y continue permiten controlar el flujo de ejecución de un bucle. La primera se utiliza para salir de un bucle, mientras que la segunda se emplea para saltar a la siguiente iteración. Su sintaxis es la siguiente:</p>
+            <pre>
+                break;
+                continue;
+            </pre>
+            <hr>
+        </article>
+        </section>
+        <section id="punto7">
+            <h2>7.Funciones</h2>
+            <p>Las funciones en programación son conjuntos de sentencias diseñadas para realizar tareas específicas. Permiten dividir un programa en partes más manejables, facilitan el mantenimiento y promueven la reutilización de código cuando una actividad se repite en diferentes partes del programa.</p>
+            <p> La sintaxis con la que se declara una función es la siguiente:</p>
+            <pre>
+                function nombreFunción(parametro1, parametro2, ...) {
+                    // Bloque de código
+                }
+            </pre>
+            <p> Los argumentos representan los datos de entrada requeridos para
+                llevar a cabo su cometido, labor que recae en el bloque de código
+               asociado (el que va entre llaves), una de cuyas sentencias será la
+                encargada de devolver el resultado de su ejecución:</p>
+            <pre>
+                return resultado;
+            </pre>
+            <p>Un ejemplo seria:</p>
+            <pre>
+                let lado, area;
+
+                lado = Number(prompt("Lado:"));
+                
+                if(lado != NaN && lado > 0){ 
+                  area = calcularArea(lado);
+                  alert("El área de un cuadrado de lado " + lado + " es " + area);
+                }
+                else{
+                  alert("No ha introducido un número positivo");
+                }
+                
+                function calcularArea(lado){ 
+                  let area = lado ** 2;
+                  return area;
+                }
+            </pre>
+            <hr>
+            <article id="punto7.1">
+                <h3>7.1.Invocación de una Función</h3>
+                <p>Se deben invocar funciones con los mismos argumentos que se declaran. Los argumentos adicionales se ignoran, mientras que los faltantes serán undefined. Se pueden asignar valores por defecto en la declaración de la función.</p>
+                <p>Un ejemplo seria:</p>
+                <pre>
+                    let importeNeto; 
+                    const ivaGeneral = 21;
+                    const ivaReducido = 10;
+                    
+                    function calcularImporte(importe, iva = ivaGeneral) { 
+                      return importe + importe * iva / 100;
+                    }
+                    
+                    importeNeto = Number(prompt("Importe neto:"));
+                    
+                    if (importeNeto != NaN && importeNeto > 0) { 
+                      let importeGeneral = calcularImporte(importeNeto);
+                      let importeReducido = calcularImporte(importeNeto, ivaReducido);
+                      
+                    alert("El importe total con un tipo de IVA general es " + importeGeneral + "€\n" +
+                        "El importe total con un tipo de IVA reducido es " + importeReducido + "€");
+                    }
+                    else {
+                      alert("Introduzca un número positivo");
+                    }
+                </pre>
+                <p>El programa comienza declarando la variable `importeNeto` y las constantes `ivaGeneral` e `ivaReducido`. La función `calcularImporte()` calcula el importe total basado en el importe neto y el IVA, aplicando un valor por defecto (`ivaGeneral`) si no se proporciona uno. El usuario introduce el importe neto mediante `prompt()`, que se convierte en número. Si el valor es positivo (condición en un `if`), se calculan los importes con IVA general y reducido invocando la función con uno o dos argumentos.</p>
+                <p> Los puntos suspensivos (...) que hay dentro de los paréntesis forman
+                    parte de la sintaxis con la que se define la función e indican que
+                    listaArgumentos contendrá la lista de argumentos con los que se
+                    invoque la función.</p>
+                <pre>
+                    function nombreFunción(...listaArgumentos) {
+                        // Bloque de código
+                    }
+                </pre>
+                <hr>
+            </article>
+            <article id="punto7.2">
+                <h3>7.2.El tipo de datos Function</h3>
+                <p>Las funciones son objetos de tipo 
+                    Function
+                     . Esto le puede resultar
+                     extraño, pero en JavaScript todo puede ser modelado como un objeto
+                     (incluso los tipos de datos primitivos). El siguiente código lo
+                     demuestra</p>
+                <pre>
+                    function factorial(x){
+                        return x &lt;= 1 ? 1 : x * factorial(x - 1);
+                    }
+                    console.log(factorial(5)); // 120
+                </pre>
+                <p>La consecuencia de que una función sea un objeto, es que se puede
+                    asignar a una constante (o una variable).</p>
+                <pre>
+                    const factorial = function(x){
+                        return x &lt;= 1 ? 1 : x * factorial(x - 1);
+                    };
+                    console.log(factorial(5)); // 120
+                </pre>
+                <hr>
+            </article>
+            <article id="punto7.3">
+                <h3>7.3.Alcance de las variables</h3>
+                <p>En informática, el alcance de una variable define dónde puede ser accedida dentro del programa. Las variables globales, declaradas en el bloque principal, pueden usarse dentro y fuera de funciones. Por otro lado, las variables locales, declaradas dentro de funciones, solo existen dentro de esas funciones y se destruyen tras su ejecución.</p>
+                <pre>
+                    // Variable global
+                    let globalVar = "Soy una variable global";
+                    
+                    function miFuncion() {
+                      // Variable local
+                      let localVar = "Soy una variable local";
+                      
+                      console.log(globalVar); // Se puede acceder a la variable global
+                      console.log(localVar);  // Se puede acceder a la variable local
+                    }
+                    
+                    miFuncion();
+                    
+                    console.log(globalVar); // Se puede acceder a la variable global
+                    console.log(localVar);  // Error: localVar no está definida fuera de la función
+                    
+                </pre>
+                <p>Si una variable tiene el mismo nombre en ámbitos global y local, dentro de la función JavaScript da preferencia a la versión local. Las modificaciones a variables globales dentro de funciones afectan su valor fuera de ellas, pero las variables locales son independientes.</p>
+                <p>Este concepto también aplica a bloques de código como sentencias condicionales y bucles, donde las variables declaradas son locales al bloque correspondiente.</p>
+                <hr>
+            </article>
+        </section>
+        <section id="punto8">
+            <h2>8. Objetos</h2>
+            <p>JavaScript es un lenguaje de programación orientado a objetos, donde todo se modela como un objeto. Los objetos se definen por propiedades (características) y métodos (comportamientos).</p>
+            <p>Las propiedades son variables asociadas al objeto, mientras que los métodos son funciones asociadas al objeto. Esto contrasta con los tipos de datos primitivos, que son inmutables y se trabaja con sus valores, mientras que los objetos son mutables y se trabajan con sus referencias en memoria.</p>
+            <p>La programación orientada a objetos facilita el desarrollo y mantenimiento del software, ya que se trabaja en términos similares a los conceptos del mundo real.</p>
+            <p>A la vista de la definición de un objeto, las dos grandes diferencias
+                con los tipos de datos primitivos son:</p>
+            <li>Un objeto es un tipo de datos compuesto, ya que está formado
+                por una colección de valores (tantos como propiedades), a
+                diferencia de los datos primitivos, que solo pueden contener
+                uno (un número, una cadena, etc.).</li>
+            <li>Los valores primitivos son inmutables, mientras que los
+                objetos pueden modificarse sin cambiar su identidad. Por
+                ejemplo, el número 5 no se puede modificar, de lo contrario
+                sería otro número diferente. Por el contrario, un objeto que
+                representara un coche podría llegar a cambiar de color (el
+                valor del atributo color) y seguir siendo el mismo coche.</li>
+            <hr>
+            <article id="punto8.1">
+                <h3>8.1.Propiedades</h3>
+               <p>Las propiedades de un objeto son sus atributos o características esenciales, que pueden ser identificadores, números o cadenas.</p>
+                <pre>
+                    const miCoche = {
+                        marca: "Ferrari",
+                        modelo: "Testarrosa",
+                        potencia: 480
+                      };                      
+                </pre>
+                <p>Los valores de las propiedades pueden ser datos primitivos u otros objetos, permitiendo estructuras de datos complejas.</p>
+                <p>Para acceder al valor de una propiedad se usa la notación objeto.propiedad o objeto[propiedad] cuando el nombre de la propiedad está en una variable.</p>
+                <pre>
+                    console.log(miCoche.marca); // Salida: "Ferrari"
+                    console.log(miCoche["modelo"]); // Salida: "Testarrosa"                    
+                </pre>
+                <p>Se pueden añadir, modificar y eliminar propiedades de un objeto en tiempo de ejecución.</p>
+                <pre>
+                    miCoche.modelo = "Roma Spider";
+                    miCoche["color"] = "rojo";
+                    console.log(miCoche); // Salida: { marca: 'Ferrari', modelo: 'Roma Spider', potencia: 480, color: 'rojo' }                    
+                </pre>
+                <p>Eliminación de propiedades:</p>
+                <pre>
+                    delete miCoche.color;
+                    console.log(miCoche); // Salida: { marca: 'Ferrari', modelo: 'Roma Spider', potencia: 480 }                    
+                </pre>
+                <p>El bucle for...in permite recorrer todas las propiedades de un objeto.</p>
+                <pre>
+                    for (let prop in miCoche) {
+                        console.log(`${prop}: ${miCoche[prop]}`);
+                      }
+                      // Salida:
+                      // marca: Ferrari
+                      // modelo: Roma Spider
+                      // potencia: 480                      
+                </pre>
+                <p>Las propiedades pueden contener otros objetos, permitiendo acceder a sus atributos mediante una cadena de propiedades, por ejemplo objeto.propiedad.subpropiedad.</p>
+                <pre>
+                    const yo = {
+                        nombre: "Juan",
+                        edad: 35,
+                        DNI: "12345678A"
+                      };
+                      
+                      miCoche.propietario = yo;
+                      console.log(miCoche.propietario.nombre); // Salida: "Juan"                      
+                </pre>
+                <hr>
+            </article>
+            <article id="punto8.2">
+                <h3>8.2.Métodos</h3>
+                <p>Los métodos son funciones dentro de un objeto que permiten realizar acciones sobre sus propiedades. Son esenciales para encapsular lógica y mejorar la organización del código.</p>
+                <p>Un método se define como una función dentro de un objeto:</p>
+                <pre>
+                    const miCoche = {
+                        marca: "Ferrari",
+                        modelo: "Testarrosa",
+                        potencia: 480,
+                        datosVehiculo() {
+                          return `Marca: ${this.marca}\nModelo: ${this.modelo}\nPotencia: ${this.potencia} CV`;
+                        }
+                      };
+                </pre>
+                <p>Invocación de métodos: Los métodos se invocan usando la notación objeto.metodo(argumentos).</p>
+                <pre>
+                    console.log(miCoche.datosVehiculo()); // Salida:
+                    // Marca: Ferrari
+                    // Modelo: Testarrosa
+                    // Potencia: 480 CV                    
+                </pre>
+                <p>Uso de this: Dentro de los métodos, la palabra clave this hace referencia al objeto actual, permitiendo acceder a sus propiedades.</p>
+                <pre>
+                    const miCoche = {
+                        marca: "Ferrari",
+                        modelo: "Testarrosa",
+                        potencia: 480,
+                        datosVehiculo() {
+                            return `Marca: ${this.marca}\nModelo: ${this.modelo}\nPotencia: ${this.potencia} CV`;
+                            }
+                        };
+                </pre>
+                <hr>
+            </article>
+            <article id="punto8.3">
+                <h3>8.3.La función Constructora</h3>
+                <p>Las funciones constructoras se definen como funciones normales, pero su nombre suele empezar por mayúscula.
+                    Dentro de la función, se inicializan las propiedades y métodos del objeto usando la palabra clave this.
+                </p>
+                <pre>
+                    function Coche(marca, modelo, potencia) {
+                        this.marca = marca;
+                        this.modelo = modelo;
+                        this.potencia = potencia;
+                        this.datosVehiculo = function() {
+                          return `Marca: ${this.marca}\nModelo: ${this.modelo}\nPotencia: ${this.potencia} CV`;
+                        };
+                      }                      
+                </pre>
+                <p>Los objetos se crean usando el operador new seguido del nombre de la función constructora.
+                    Esto crea un nuevo objeto vacío y luego llama a la función constructora, inicializando sus propiedades y métodos.
+                </p>
+                <pre>
+                    const miCoche = new Coche("Ferrari", "Testarrosa", 480);
+                    alert(miCoche.datosVehiculo());
+                </pre>
+                <p>Ventajas de las funciones constructoras:</p>
+                <li>Permiten crear múltiples objetos de forma dinámica, a diferencia de los iniciadores de objetos.</li>
+                <li>Son necesarias cuando los datos del objeto se obtienen en tiempo de ejecución, como en formularios.</li>
+                <p>Después de crear un objeto con una función constructora, se pueden agregar más propiedades y métodos de forma individual.
+                   Sin embargo, las propiedades y métodos definidos en la función constructora serán comunes a todos los objetos creados.
+                </p>
+                <p>El operador typeof devuelve "Object" para objetos, sin distinguir entre diferentes tipos y 
+                   el operador instanceof permite verificar si un objeto fue creado por una función constructora específica.
+                </p>
+                <pre>
+                    function Persona(nombre, edad) {
+                        this.nombre = nombre;
+                        this.edad = edad;
+                      }
+                      
+                      const yo = new Persona("Juan", 35);
+                      const miCoche = new Coche("Ferrari", "Testarrosa", 480);
+                      
+                      function mostrarTipo(obj) {
+                        if (obj instanceof Persona) {
+                          console.log("Es una Persona");
+                        } else if (obj instanceof Coche) {
+                          console.log("Es un Coche");
+                        } else {
+                          console.log("Tipo desconocido");
+                        }
+                      }
+                      
+                      mostrarTipo(yo); // Salida: "Es una Persona"
+                      mostrarTipo(miCoche); // Salida: "Es un Coche"                      
+                </pre>
+                <hr>
+            </article>
+            <article id="punto8.4">
+                <h3>8.4.Mutabilidad</h3>
+                <p> La mutabilidad es una característica de los objetos que permite su
+                    modificación una vez creados (algo que no es posible con los valores
+                    primitivos, motivo por lo que se dice que estos son inmutables). </p>
+                <p> Cuando se asigna un valor primitivo a una variable (o a una
+                    constante), esta almacena el valor indicado. Sin embargo, cuando se
+                   asigna un objeto a una variable (o a una constante), lo que contiene
+                    es la referencia al objeto (la zona de memoria donde se encuentra),
+                    no el propio objeto.</p>
+                <p> Por ejemplo, la siguiente sentencia almacenaría en la constante
+                    otroCoche
+                    una copia de la referencia al objeto 
+                   miCoche
+                    (no una
+                    copia de dicho objeto), por lo que ambas constantes representarían
+                    el mismo objeto.</p>
+                <pre>
+                    const otroCoche = miCoche;
+                </pre>
+                <p>Si lo que quiere realmente es clonar un objeto, Javascript ofrece
+                    diversas alternativas, una de las cuales es el operador spread, que se
+                    representa como tres puntos suspensivos:</p>
+                <pre>
+                    const otroCoche = { ...miCoche };
+                </pre>
+                <p>En resumen, cuando se asigna un valor primitivo a una variable o se
+                    pasa como argumento a una función, se copia su contenido,
+                    mientras que en los objetos se asigna o se pasa su referencia. Por
+                    otra parte, cuando se comparan dos valores primitivos, se compara
+                    su contenido, mientras que en los objetos se comparan sus
+                    referencias.
+                    Aparte de los objetos que usted pueda llegar a crear, JavaScript
+                    ofrece otros de uso común que facilitan el manejo de listas, el
+                    procesamiento de textos, la gestión de fechas y horas o la realización
+                    de operaciones matemáticas de distinta naturaleza. Se trata de
+                    objetos globales que se ofrecen ya integrados en el propio lenguaje.</p>
+                <hr>
+            </article>
+            <article id="punto8.5">
+                <h3>8.5.Objetos Globales</h3>
+                <p>JavaScript proporciona objetos globales que representan los tipos de datos primitivos, como Number, String, Boolean, BigInt, Function, etc.</p>
+                <p>Estos objetos tienen propiedades y métodos que permiten trabajar con los valores de esos tipos de datos.</p>
+                <p>Algunos métodos de estos objetos globales, como parseInt(), parseFloat() y toString(), pueden ser llamados directamente sin necesidad de asociarlos a un objeto.
+                    Otros métodos, como Number.prototype.toString(), deben ser llamados a través del objeto correspondiente.</p>
+                <p>Además de los objetos que representan tipos de datos primitivos, JavaScript proporciona otros objetos globales muy útiles, como:</p>
+                <li>Math: Proporciona constantes y funciones matemáticas.</li>
+                <li>Date: Proporciona métodos para trabajar con fechas y horas.</li>
+                <li>Array: Proporciona métodos para trabajar con listas de datos.</li>
+                <li>String: Proporciona métodos para trabajar con cadenas de texto.</li>
+                <p>En la práctica, se recomienda trabajar directamente con los valores primitivos, ya que JavaScript realizará automáticamente la conversión a objetos cuando sea necesario.
+                    La creación explícita de objetos equivalentes a valores primitivos puede ralentizar el código y complicarlo innecesariamente.</p>
+                <hr>
+            </article>
+            <article id="punto8.5.1">
+                <h3>8.5.1.El objeto Array</h3>
+                <p>Los arrays en JavaScript son estructuras que permiten almacenar múltiples valores en una sola variable. Son muy utilizados para manejar listas de datos.</p>
+                <p>Se pueden definir de dos formas:</p>
+                <pre>
+                    let frutas = ["Manzana", "Banana", "Cereza"];  // Usando corchetes []
+                    let numeros = new Array(1, 2, 3, 4, 5);        // Usando el constructor Array                    
+                </pre>
+                <p>Una vez creado un array, para acceder a sus elementos se utiliza su
+                    índice (posición), que siempre empieza por 0. Por lo tanto, la
+                    posición 1 es la del segundo elemento (no la del primero)</p>
+                <pre>
+                    let frutas = ["Manzana", "Banana", "Cereza"];
+                    console.log(frutas[0]); // Salida: "Manzana"
+                    console.log(frutas[1]); // Salida: "Banana"
+                    console.log(frutas[2]); // Salida: "Cereza"
+                </pre>
+                <p>Las colas son una estructura de datos donde los elementos se ordenan según el orden de llegada.
+                    El primer elemento en entrar es el primero en salir.
+                </p>
+                <p>En JavaScript, se pueden implementar colas utilizando los métodos de array:</p>
+                <li>push(): Agrega un elemento al final del array.</li>
+                <li>shift(): Extrae el primer elemento del array.</li>
+                <pre>
+                    let frutas = ["Manzana", "Banana", "Cereza"];
+                    frutas.push("Damasco"); // Agrega "Damasco" al final
+                    frutas.shift(); // Extrae "Manzana"
+                    console.log(frutas); // Salida: ["Banana", "Cereza", "Damasco"]
+                </pre>
+                <p>Las pilas son una estructura de datos donde los elementos se ordenan según el orden de llegada.
+                    El último elemento en entrar es el primero en salir.
+                </p>
+                <p>En JavaScript, se pueden implementar pilas utilizando los métodos de array:</p>
+                <li>push(): Agrega un elemento al final del array.</li>
+                <li>pop(): Extrae el último elemento del array.</li>
+                <pre>
+                    let frutas = ["Manzana", "Banana", "Cereza"];
+                    frutas.push("Damasco"); // Agrega "Damasco" al final
+                    frutas.pop(); // Extrae "Damasco"
+                    console.log(frutas); // Salida: ["Manzana", "Banana", "Cereza"]
+                </pre>
+                <p>El método concat() crea un nuevo array combinando los elementos del array original con los elementos pasados como argumentos.</p>
+                <pre>
+                    concat(valor1, valor2, ..., valorN)
+                    array.concat(valor1, valor2, ..., valorN)
+                </pre>
+                <p>Los valores pueden ser de cualquier tipo, incluso arrays.</p>
+                <p>El método slice() crea un nuevo array con los elementos comprendidos entre una posición inicial y una final (sin incluir esta última) del array original.</p>
+                <pre>
+                    slice(inicio, fin)
+                    array.slice(inicio, fin)
+                </pre>
+                <p>El método map() crea un nuevo array aplicando una función de transformación a cada elemento del array original. </p>
+                <pre>
+                    map(función)
+                    array.map(función)
+                </pre>
+                <p>JavaScript nos ofrece un método para ordenar las arrays.</p>
+                <p>sort(): Ordena los elementos del array de forma alfabética (según el código Unicode de los caracteres).</p>
+                <pre>
+                    const arrayOriginal = ['a', 'B', '1', 'c', '2', 'A'];
+                    arrayOriginal.sort();
+                    console.log(arrayOriginal); // Salida: ['1', '2', 'A', 'B', 'a', 'c']
+                </pre>
+                <p>Para ordenar de forma numérica, se puede pasar una función de comparación como argumento:</p>
+                <pre>
+                    const numeros = [10, 2, 5, 6];
+                    numeros.sort((a, b) => a - b);
+                    console.log(numeros); // Salida: [2, 5, 6, 10]                    
+                </pre>
+                <p>Si lo queremos al reves usamos reverse(): Invierte el orden de los elementos del array.</p>
+                <p>Tenemos varias formas de busquedas en arrays que son:</p>
+                <li>every(función): Devuelve true si todos los elementos cumplen la condición de la función.</li>
+                <li>some(función): Devuelve true si al menos un elemento cumple la condición de la función.</li>
+                <li>find(función): Devuelve el primer elemento que cumple la condición de la función.</li>
+                <li>findIndex(función): Devuelve el índice del primer elemento que cumple la condición de la función.</li>
+                <li>filter(función): Devuelve un nuevo array con los elementos que cumplen la condición de la función.</li>
+                <li>indexOf(valor): Devuelve el índice del primer elemento con el valor indicado.</li>
+                <li>lastIndexOf(valor): Devuelve el índice del último elemento con el valor indicado.</li>
+                <li>includes(valor): Devuelve true si el array contiene el valor indicado.</li>
+            </article>
+            <article id="punto8.5.2">
+                <h3>8.5.2.El Objeto String</h3>
+                <p> Como sabe, un 
+                    String
+                     es un tipo de datos primitivo que permite el
+                     almacenamiento y la manipulación de textos (cadenas de
+                     caracteres). Sin embargo, también es un objeto que se puede crear
+                     utilizando el operador 
+                    new
+                     , tal como se hace en la siguiente
+                     sentencia:</p>
+                <pre>
+                    const cadena = new String("Hola, mundo");
+                </pre>
+                <p>Al igual que sucedía con los elementos de un array, en una cadena
+                    también es posible obtener el carácter situado en una posición
+                    determinada:</p>
+                <pre>
+                    const cadena = "Hola, mundo";
+                    console.log(cadena[0]); // Salida: "H"
+                </pre>
+                <p>El método 
+                    charAt()
+                     solo se puede usar para leer caracteres, no
+                     para escribirlos.</p>
+                <pre>
+                    const cadena = "Hola, mundo";
+                    console.log(cadena.charAt(0)); // Salida: "H"
+                </pre>
+                <p>Al igual que sucedía con los arrays, las cadenas disponen de un
+                    atributo cuyo valor es el número de caracteres que la componen: lenght</p>
+                <pre>
+                    const cadena = "Hola, mundo";
+                    console.log(cadena.length); // Salida: 11
+                </pre>
+                <p> El objeto 
+                    String
+                     dispone de innumerables métodos que permiten
+                     la manipulación de textos</p>
+                <li>concat(cadena1, cadena2, ...): Concatena varias cadenas y devuelve una nueva.</li>
+                <li>Extracción de partes de una cadena: slice() y substring()</li>
+                <li>Sustitución de partes de una cadena: replace()</li>
+                <li>Conversión entre mayúsculas y minúsculas: toUpperCase(), toLowerCase()</li>
+                <li>Manejo de espacios: trim(), trimStart(), trimEnd()</li>
+                <li>Transformación de cadenas en arrays: split()</li>
+                <li>Búsquedas: indexOf, lastIndexOf, search(), includes(), startsWith() y endsWith</li>
+                <p>Las plantillas literales son cadenas delimitadas por comillas invertidas (`) que permiten incrustar expresiones.</p>
+                <p>Las expresiones a evaluar se incluyen entre ${}, lo que permite crear textos de forma dinámica.</p>
+                <pre>
+                    const nombre = "Juan";
+                    const edad = 35;
+                    const mensaje = `Hola, me llamo ${nombre} y tengo ${edad} años`;
+                    console.log(mensaje); // Salida: "Hola, me llamo Juan y tengo 35 años"
+                </pre>
+                <hr>
+            </article>
+            <article id="punto8.5.3">
+                <h3>8.5.3.El objeto Date</h3>
+                <p>El objeto Date permite manejar fechas y horas en aplicaciones JavaScript.
+                    Existen múltiples formas de crear un objeto Date, la más sencilla es new Date() que crea un objeto con la fecha y hora actual.</p>
+                <pre>
+                    const fechaActual = new Date();
+                    console.log(fechaActual); // Salida: Fecha y hora actual
+                </pre>
+                <p>Se pueden crear objetos Date a partir de cadenas de texto en diferentes formatos:</p>
+                <li>ISO 8601 (ej: "2023-08-11")</li>
+                <li>Formato corto (ej: "08/11/2023")</li>
+                <li>Formato largo (ej: "11 Aug 2023" o "Aug 11 2023")</li>
+                <pre>
+                    const fecha1 = new Date("2023-08-11");
+                    const fecha2 = new Date("08/11/2023");
+                    const fecha3 = new Date("11 Aug 2023");
+                    const fecha4 = new Date("Aug 11 2023");
+                </pre>
+                <p>El formato ISO 8601 es el estándar recomendado, permite representar fechas, horas y zonas horarias sin ambigüedades.</p>
+                <p>Además de new Date(), se pueden usar otros constructores:</p>
+                <li>new Date(String): Crea un objeto Date a partir de una cadena de texto.</li>
+                <li>new Date(año, mes, día, hora, minuto, segundo, milisegundo): Crea un objeto Date con valores numéricos.</li>
+                <li>new Date(milisegundos): Crea un objeto Date a partir del número de milisegundos desde el 1 de enero de 1970.</li>
+                <p>Los objetos Date manejan las zonas horarias, mostrando la hora local.
+                    La hora UTC (Tiempo Universal Coordinado) se puede obtener con el método getUTCHours().</p>
+                <p>El método Date.parse(fecha) convierte una fecha en milisegundos desde el 1 de enero de 1970.
+                    Esto permite comparar y calcular diferencias entre fechas de forma sencilla.</p>
+                <p>Los métodos toString() y toUTCString() permiten convertir un objeto Date a una cadena de texto.
+                    La diferencia es que toString() muestra la hora local, mientras que toUTCString() muestra la hora UTC.</p>
+                <pre>
+                    const fecha = new Date("2023-08-11T14:30:00");
+                    console.log(fecha.toString()); // Salida: "Fri Aug 11 2023 14:30:00 GMT+0200 (CEST)"
+                    console.log(fecha.toUTCString()); // Salida: "Fri, 11 Aug 2023 12:30:00 GMT"
+                </pre>
+                <hr>
+            </article>
+            <article id="punto8.5.4">
+                <h3>8.5.4.El objeto Math</h3>
+                <p>El objeto Math proporciona constantes y métodos matemáticos útiles en JavaScript.
+                    Permite realizar operaciones matemáticas más complejas que las ofrecidas por los operadores básicos</p>
+                <p>Algunas de las constantes más importantes son:</p>
+                <li>Math.E: Número de Euler (aproximadamente 2.71828)</li>
+                <li>Math.PI: Valor de π (aproximadamente 3.14159)</li>
+                <li>Math.E: Número de Euler (aproximadamente 2.71828)</li>
+                <li>Math.E: Número de Euler (aproximadamente 2.71828)</li>
+                <li>Math.LN2, Math.LN10, Math.LOG10E, Math.LOG2E: Logaritmos relacionados con el número de Euler</li>
+                <p>Los métodos más importantes son:</p>
+                <li>Funciones trigonométricas: Math.sin(), Math.cos(), Math.tan(), Math.asin(), Math.acos(), Math.atan()</li>
+                <li>Funciones logarítmicas: Math.log(), Math.log10(), Math.log2()</li>
+                <li>Funciones de redondeo: Math.round(), Math.floor(), Math.ceil(), Math.trunc()</li>
+                <li>Otras funciones: Math.sqrt(), Math.abs(), Math.sign()</li>
+                <p>Nuémros aleatorios:</p>
+                <li>Math.random() devuelve un número aleatorio entre 0 y 1 (exclusive).
+                    Se pueden generar números aleatorios en un rango específico usando la fórmula:</li>
+                <pre>
+                    Math.floor(Math.random() * (max - min + 1)) + min
+                </pre>
+            </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </section>
+    </main>
+</body>
+</html>
